@@ -57,10 +57,11 @@ sudo firewall-cmd --reload
 sudo chown -R $USER:$USER /var/www
 
 #Contenido CSS para servicios.html
-echo "<!DOCTYPE html>
+echo "
+<!DOCTYPE html>
 <html lang='es'>
-<head>
-  <style type="text/css">
+    <head>
+        <style type="text/css">
   	/* Estilo para el cuerpo de página */
 body {
   padding: 25px;
@@ -103,13 +104,14 @@ h2 {
 }
 
   </style>
-  <meta charset='UTF-8'>
-  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-  <meta http-equiv='X-UA-Compatible' content='ie=edge'>
-  <title>Instalacion de servicio WEB junto con monitorizacion de sus Servicios</title>
-  <link rel='stylesheet' href='estilos.css'>
-</head>
-<body></body>
+        <meta charset='UTF-8'>
+        <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+        <meta http-equiv='X-UA-Compatible' content='ie=edge'>
+        <title>Instalacion de servicio WEB junto con monitorizacion de sus
+            Servicios</title>
+        <link rel='stylesheet' href='estilos.css'>
+    </head>
+    <body></body>
 </html>
 " > $ESTADOS
 
@@ -132,8 +134,8 @@ estado() {
 echo "
 <!DOCTYPE html>
 <html lang='es'>
-<head>
-  <style type="text/css">
+    <head>
+        <style type="text/css">
   	/* Estilo para el cuerpo de página */
 body {
   padding: 25px;
@@ -176,16 +178,18 @@ h2 {
 }
 
   </style>
-  <meta charset='UTF-8'>
-  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-  <meta http-equiv='X-UA-Compatible' content='ie=edge'>
-  <title>Instalacion de servicio WEB junto con monitorizacion de sus Servicios</title>
-  <link rel='stylesheet' href='estilos.css'>
-</head>
-<body>
-<h1>Se instala el servico WEB a fecha: <p id='date'>$FECHA</p></h1>
-<a href="http://localhost/servicios.html" target="_blank">COMPROBEMOS LOS SERVICIOS</a>
-</body>
+        <meta charset='UTF-8'>
+        <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+        <meta http-equiv='X-UA-Compatible' content='ie=edge'>
+        <title>Instalacion de servicio WEB junto con monitorizacion de sus
+            Servicios</title>
+        <link rel='stylesheet' href='estilos.css'>
+    </head>
+    <body>
+        <h1>Se instala el servico WEB a fecha: <p id='date'>$FECHA</p></h1>
+        <a href="http://localhost/servicios.html" target="_blank">COMPROBEMOS
+            LOS SERVICIOS</a>
+    </body>
 </html>
 " > $DIRECTORIO
 
